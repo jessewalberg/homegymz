@@ -1,0 +1,22 @@
+<div class="page-padding">
+  <div class="hero-wrapper">
+    <div class="hero-text">
+      <h2>
+        Experience the variety of home gyms, from the state-of-the-art to the
+        straightforward,
+      </h2>
+      <h2>delivered to your email inbox every Saturday and Sunday.</h2>
+    </div>
+    <div class="hero-form-wrapper">
+      <form class="hero-form" (ngSubmit)="submitForm($event)">
+        <input
+          type="text"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <button type="submit">Subscribe (its free)</button>
+      </form>
+    </div>
+  </div>
+</div>

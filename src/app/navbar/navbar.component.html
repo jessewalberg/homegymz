@@ -1,0 +1,31 @@
+<div class="navigation-wrapper">
+  <div *ngIf="isMobileView" class="mobile-navigation-wrapper">
+    <nav class="mobile-navigation">
+      <p>navbar works!</p>
+      <div class="icon">
+        <mat-icon
+          class="hamburger-menu"
+          [inline]="true"
+          fontIcon="{{ whichIcon }}"
+          (click)="onHamburgerClick()"
+        ></mat-icon>
+      </div>
+    </nav>
+    <div *ngIf="isMobileNavOpen" class="mobile-navigation-wrapper">
+      <ul class="mobile-navigation-items">
+        <li><a href="">Homegyms</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Submit a gym</a></li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="!isMobileView" class="desktop-navigation-wrapper">
+    <div class="desktop-navigation">
+      <ul class="desktop-navigation-items">
+        <li><a href="">Homegyms</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Submit a gym</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

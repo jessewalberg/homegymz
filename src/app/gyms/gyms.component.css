@@ -1,0 +1,43 @@
+@media only screen and (min-width: 1300px) {
+  .gym-cards {
+    column-gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gym-cards {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+  }
+}
+
+.gym-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.75rem;
+}
+
+.gym-card {
+  width: 40rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px -1px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.gym-card:hover {
+  transform: scale(1.01);
+}
+
+.gym-card img {
+  max-width: 100%;
+}
+
+.gym-card h3,
+p {
+  margin: 0.5rem 0;
+}
